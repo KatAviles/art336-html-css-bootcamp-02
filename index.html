@@ -4,13 +4,81 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>The Basics of Typography</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
     </head>
     
     <body>
     
+        <h1>The Basics of Typography</h1>
+        
+        <p>Typography is a central component of design. It gives us an understanding of the heritage behind our craft. It’s one of the primary ways we, as a society, pass on information to others. Imagine a website, a magazine or even TV without text. Typography is a subject that raises passions and it can become a consuming obsession. If this subject is relatively new to you, or perhaps something you want to know more about, then this guide can start you on that journey.</p>
+        
+        <h2>What Is Typography? </h2>
+        
+        <p>From a descriptive and simplistic point-of-view, <strong>typography</strong> is the arrangement of type. But there is so much more to it than that. It can mean different things depending on whom you ask.</p>
+        
+        <p>For me, how typography is used in a design is deeply rooted in its overall theme, tone and message. It works with your layout, grid and color choice to create a well-rounded design.</p>
+        
+        <p>Your choice of typefaces and your technique of setting type give your composition its character, pace and style. Not only does it give the copy legibility, it also helps the reader gain a greater insight into the subject of the design.</p>
+        
+        <p>A simple illustration of how influential typography can be is to look at the same text with different typefaces. Notice how typography can define and alter the message:</p>
+        
+        <p>It’s this level of integration with a design theme that makes typography one of the most powerful tools in the designer’s toolbox.</p>
+
+        <p>Next, let’s go through a few basic typography terms and concepts.</p>
+        
+        <h2>Lines</h2>
+        
+        <p>A line of characters has at least five lines that it can be aligned to. These horizontal lines are guides for capital letters, ascenders, lowercase and descenders (we’ll discuss these terms shortly).</p>
+        
+        <p>Here are the five lines:</p>
+        
+        <!-- image here -->
+        
+        <ul>
+            <dt>Baseline:</dt>
+                <dl>The one you might be most familiar with is the baseline. This is the line that the text sits on.</dl>
+            <dl>Cap height (or cap line): This marks the top of capital letters.</dl>
+            <dl>Ascender height (or topline): This line shows where the top of letters such as k and h touch. Strangely, in a lot of cases, this line is slightly higher than the capital line. It took me a while to get this into my head because, intuitively, you would think that capital letters would be the tallest characters</dl>
+            <dt>X-height (or midline):</dt>
+                <dl>This shows the height of lowercase letters (excluding ascenders and descenders). It is typically measured using the height of the letter x.</dl>
+            <dt>Descender height (or beardline):</dt>
+                <dl>Descenders are the parts of characters that go below the baseline (such as the letters p and y). This line shows where the bottoms of the decenders are.</dl>
+        </ul>
+        <h2>Leading</h2>
+        <p><i>Leading</i> describes the amount of space between lines of text. You can measure leading by obtaining the distance between two baselines. Leading is called <kbd>line-height</kbd> in CSS.</p>
+        
+        <!-- image here -->
+        
+        <p>Leading is powerful. It can affect how readable long blocks of text are.</p>
+
+        <p>When you decrease leading, lines get closer to each other, making a block of text appear more compacted. Lowering the amount of leading can cause descenders and ascenders to collide, and this could have an adverse effect on readability. But as a visual style, low amounts of leading can increase the pace of the reader and invoke the feeling of cramped conditions and claustrophobia, which can be desired when you are using type in this expressive manner.</p>
+
+        <p>Increasing leading can reduce the pace of a piece of text; it can slow the reader by introducing more white space. It can display a more relaxed feel in text blocks. Too much leading can cause continuity problems, as the eyes of the reader is required to travel a greater distance between lines of text.</p>
+
+        <p>Look at the examples below. All are set in the same typeface, weight and measure. However, each one has different leading values.</p>
+        
+        <!---image here -->
+        <ul>
+        
+            <ol>Example 1 is set to a negative value (a value that is smaller than the type size). You can see the ascenders colliding with descenders and its effects on readability and aesthetics.</ol>
+            <ol>Example 2 is set at an often-recommended value, which is 120% of the type size. This means that if your font size is 10pt, then leading should be set at 12pt.</ol>
+            <ol>Example 3 is set to 200% of the type size. You’ll notice the disruption in the pace and flow of reading the text.</ol>
+        </ul>
+        
+        <h2>Tracking</h2>
+        <p><i>Tracking</i> (or <i>letter-spacing</i>) is the space between groups of characters. This is called the <kbd>letter-spacing</kbd> property in CSS.</p>
+        
+        <!-- image -->
+        
+        <p>Tracking can be described as being <em>loose</em> or <em>tight</em>. Loose tracking is when the letters have a larger distance between them. Tight tracking is when the letters are closer.</p>
+
+Tracking has similar guidelines as leading, and all of these best practices are tied to readability.
+
+The longer your line (or measure as it’s often called) the more loose your tracking needs to be. This rule is not set in stone. Variables such as typeface choice, background color, number of columns and the surrounding design elements can also influence the readability of a block of text. Each time you set type, you should be looking at the overall picture.
+        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
         <script src="js/plugins.min.js"></script>
