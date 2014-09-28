@@ -3,9 +3,103 @@ Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
-    background-color: #fff;
-    margin: auto;
+    @include body-font-regular;
+    @include fontSize(18px);
+    background-color: rgba(255, 231, 128, 0.46);
+    line-height: 1.3;
+    margin: 0 auto;
     max-width: 550px;
     width: 100%;
+}
+
+
+///this shit not working
+article + header 1 {
+    background-color: #fff;
+    //padding: 10px 20px 0px 10px;
+}
+
+main {
+    background-color: #fff;
+    margin: 10px 10px 0 0;
+}
+
+////
+p:first-of-type{
+    background-color: rgba(255, 231, 128, 0.53);
+    border: 3px #fff solid;
+    padding: 10px;
+    text-align: center;
+}
+
+footer[role="contentinfo"] {
+    padding: 0 10px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+header h1 {
+    @include headline-font;
+    @include fontSize(100px);
+    line-height: 0.659;
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    @include body-header-font;
+    @include fontSize(40px);  
+}
+
+h3, h4, h5, h6 {
+    @include small-heading-font;
+}
+
+ul li {
+    list-style: circle;
+}
+    
+//nav styling
+
+a {
+    color: #454545;
+    @include link-font;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d8d8d8;
+}
+    
+
+footer[role="complementary"] {
+    border-top: 1px #989898 solid;
+    border-bottom: 1px #989898 solid;
+    color: #989898;
+    margin: 40px 0;
+    padding: 10px 0;
+}
+
+main footer p {
+    margin: 0;
+    
+}
+
+footer[role="contentinfo"] small {
+    border-top: 1px #989898 solid;
+    display: block;
+    @include fontSize(11px);
+    margin-bottom: 20px;
 }

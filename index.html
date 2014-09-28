@@ -6,13 +6,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>The Basics of Typography</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600italic'|Lobster|Oswald:300' rel='stylesheet' type='text/css'> --> 
         <link rel="stylesheet" href="css/main.css">
     </head>
     
     <body>
-    
+        <main role="main">
+            <article role="article">
+                
+    <header>
         <h1>The Basics of Typography</h1>
-        
+    </header>
+                
         <p>Typography is a central component of design. It gives us an understanding of the heritage behind our craft. It’s one of the primary ways we, as a society, pass on information to others. Imagine a website, a magazine or even TV without text. Typography is a subject that raises passions and it can become a consuming obsession. If this subject is relatively new to you, or perhaps something you want to know more about, then this guide can start you on that journey.</p>
         
         <h2>What Is Typography? </h2>
@@ -25,6 +30,11 @@
         
         <p>A simple illustration of how influential typography can be is to look at the same text with different typefaces. Notice how typography can define and alter the message:</p>
         
+                <figure>
+                    <img src="img/01_typeface_example.jpg"/>
+                </figure>
+        <!-- image --> 
+        
         <p>It’s this level of integration with a design theme that makes typography one of the most powerful tools in the designer’s toolbox.</p>
 
         <p>Next, let’s go through a few basic typography terms and concepts.</p>
@@ -35,21 +45,33 @@
         
         <p>Here are the five lines:</p>
         
-        <!-- image here -->
+        <!-- image -->
+                <figure>
+                    <img src="img/02_lines.jpg"/>
+                </figure>
         
         <ul>
-            <dt>Baseline:</dt>
-                <dl>The one you might be most familiar with is the baseline. This is the line that the text sits on.</dl>
-            <dl>Cap height (or cap line): This marks the top of capital letters.</dl>
-            <dl>Ascender height (or topline): This line shows where the top of letters such as k and h touch. Strangely, in a lot of cases, this line is slightly higher than the capital line. It took me a while to get this into my head because, intuitively, you would think that capital letters would be the tallest characters</dl>
-            <dt>X-height (or midline):</dt>
-                <dl>This shows the height of lowercase letters (excluding ascenders and descenders). It is typically measured using the height of the letter x.</dl>
-            <dt>Descender height (or beardline):</dt>
-                <dl>Descenders are the parts of characters that go below the baseline (such as the letters p and y). This line shows where the bottoms of the decenders are.</dl>
+            <dl>
+                <dt><b>Baseline</b></dt>
+                    <dd>The one you might be most familiar with is the baseline. This is the line that the text sits on.</dd>
+                <dt><b>Cap height (or cap line)</b></dt>
+                    <dd>This marks the top of capital letters.</dd>
+                <dt><b>Ascender height (or topline)</b></dt>
+                    <dd>This line shows where the top of letters such as k and h touch. Strangely, in a lot of cases, this line is slightly higher than the capital line. It took me a while to get this into my head because, intuitively, you would think that capital letters would be the tallest characters.</dd>
+                <dt><b>X-height (or midline)</b></dt>
+                    <dd>This shows the height of lowercase letters (excluding ascenders and descenders). It is typically measured using the height of the letter x.</dd>
+                <dt><b>Descender height (or beardline)</b></dt>
+                    <dd>Descenders are the parts of characters that go below the baseline (such as the letters p and y). This line shows where the bottoms of the decenders are.</dd>
+            </dl>
         </ul>
-        <h2>Leading</h2>
-        <p><i>Leading</i> describes the amount of space between lines of text. You can measure leading by obtaining the distance between two baselines. Leading is called <kbd>line-height</kbd> in CSS.</p>
         
+        <h2>Leading</h2>
+        
+        <p><i>Leading</i> describes the amount of space between lines of text. You can measure leading by obtaining the distance between two baselines. Leading is called <kbd><small>line-height</small></kbd> in CSS.</p>
+        
+                <figure>
+                    <img src="img/03_leading.jpg"/>
+                </figure>
         <!-- image here -->
         
         <p>Leading is powerful. It can affect how readable long blocks of text are.</p>
@@ -60,30 +82,178 @@
 
         <p>Look at the examples below. All are set in the same typeface, weight and measure. However, each one has different leading values.</p>
         
+                <figure>
+                    <img src="img/04_leading_example.jpg"/>
+                </figure>
         <!---image here -->
         <ul>
         
-            <ol>Example 1 is set to a negative value (a value that is smaller than the type size). You can see the ascenders colliding with descenders and its effects on readability and aesthetics.</ol>
-            <ol>Example 2 is set at an often-recommended value, which is 120% of the type size. This means that if your font size is 10pt, then leading should be set at 12pt.</ol>
-            <ol>Example 3 is set to 200% of the type size. You’ll notice the disruption in the pace and flow of reading the text.</ol>
+            <li><em>Example 1</em> is set to a negative value (a value that is smaller than the type size). You can see the ascenders colliding with descenders and its effects on readability and aesthetics.</li>
+            <li><em>Example 2</em> is set at an often-recommended value, which is 120% of the type size. This means that if your font size is 10pt, then leading should be set at 12pt.</li>
+            <li><em>Example 3</em> is set to 200% of the type size. You’ll notice the disruption in the pace and flow of reading the text.</li>
         </ul>
         
-        <h2>Tracking</h2>
-        <p><i>Tracking</i> (or <i>letter-spacing</i>) is the space between groups of characters. This is called the <kbd>letter-spacing</kbd> property in CSS.</p>
+        <p>Here are a few leading guidelines:</p>
+
+            <ol>
+                <li>Leading can affect text blocks in different ways. A short block of text (such as a tagline/slogan) versus a long block of text (such as a paragraph or news column) will be affected by leading in its own way. Just because it works well on one doesn’t mean it will work equally well in the other.</li>
+                <li>The more words you have in a line, the more leading you will need to maintain a pleasurable reading experience.</li>
+                <li>If you increase <b>word-spacing</b> (the space between each word), you’ll have to increase leading to improve the readability of the text block.</li>
+            </ol>
         
+        <h2>Tracking</h2>
+        
+        <p><i>Tracking</i> (or <i>letter-spacing</i>) is the space between groups of characters. This is called the <kbd><small>letter-spacing</small></kbd> property in CSS.</p>
+        
+                <figure>
+                    <img src="img/05_tracking.jpg"/>
+                </figure>
         <!-- image -->
         
         <p>Tracking can be described as being <em>loose</em> or <em>tight</em>. Loose tracking is when the letters have a larger distance between them. Tight tracking is when the letters are closer.</p>
 
-Tracking has similar guidelines as leading, and all of these best practices are tied to readability.
+        <p>Tracking has similar guidelines as leading, and all of these best practices are tied to readability.</p>
 
-The longer your line (or measure as it’s often called) the more loose your tracking needs to be. This rule is not set in stone. Variables such as typeface choice, background color, number of columns and the surrounding design elements can also influence the readability of a block of text. Each time you set type, you should be looking at the overall picture.
+        <p>The longer your line (or <em>measure</em> as it’s often called) the more loose your tracking needs to be. This rule is not set in stone. Variables such as typeface choice, background color, number of columns and the surrounding design elements can also influence the readability of a block of text. Each time you set type, you should be looking at the overall picture.</p>
+        
+        <h2>Kerning</h2>
+        
+        <p><em>Kerning</em> describes the amount of space between two characters.</p>
+                
+                <figure>
+                    <img src="img/06_kerning.jpg"/>
+                </figure>
+        <!-- image -->
+        
+        <p>There is often confusion between tracking and kerning. While tracking is a global setting that affects how close all the characters are, kerning is more the microscopic view of the space between two letters. Some character combinations might require more kerning than others to avoid collisions (e.g., compare <i>KX</i> versus <i>ll</i>).</p>
+
+        <p>Certain characters sit together in a manner that creates and minimizes space. For example, the lower-case l in Helvetica is a rectangle; if you put 5 of them together, (i.e., lllll) the space between each of them will be equal.</p>
+
+        <p>Now consider a character like the capital <i>W</i>. The area it takes up is less simple to define as the diagonal of the final line creates space underneath it. With this in mind, once you place the rest of the sentence next to it, this space then makes a noticeable difference when compared to the rest of the characters:</p>
+                <figure>
+                    <img src="img/07_kerning_wl.jpg"/>
+                </figure>
+        <!-- image -->
+        
+        <p>Kerning is the art of adjusting the space between characters so that the eye can flow easily across the copy without being distracted by discrepancies. Remember: good typography is never noticed.</p>
+        
+        <h2>Alignment</h2>
+        
+        <p>How you align your text has a huge impact on how people will read and perceive it. The decision of alignment should be made with your design theme in mind, and of course, readability and legibility.</p>
+        
+        <h3>FLUSH LEFT (or Ragged Right)</h3>
+        <p>Text is aligned to the left. This alignment complements the natural way we read text in western culture. When done correctly, it is one of the biggest factors in improved readability.</p>
+        
+        <p>Be sure to pay attention to the right-hand side (or the <strong>rag</strong>). It is important to make sure there is a good balance with line length; make sure that they are not too similar, but also not too far apart.</p>
+        
+        <h3>FLUSH RIGHT (or Ragged Left)</h3>
+        
+        <p>Text is aligned to the right. If we read from left to right, flush right can hamper the natural flow of the text. Use it as a contrast to the main body of text to highlight complementary copy.</p>
+        
+        <p>Watch out for punctuation marks on the right-hand side as they can disrupt the alignment.</p>
+        
+        <h3>JUSTIFIED</h3>
+        
+        <p>The start and end of text lines are both aligned to the left and right.</p>
+        
+        <p>While justified alignment looks clean because it fits neatly into a box, it can also be hard to read because there is less visual cue between the termination of a text line. Variances in spacing can appear between words in order to keep the lines even.</p>
+        
+        <p>Be vigilant on over- hyphenation, as some programs hyphenate words at the end of text lines to keep the text justified. In addition, some lines might have too much word-spacing, so you might need to adjust line breaks as needed.</p>
+        
+        <h3>CENTERED</h3>
+        
+        <p>Text is aligned to the center of the text area, rather than the edges.</p>
+        
+        <p>Exercise caution when using centered alignment — there is nothing worse than poorly set centered text. There is no shared point where the line begins and ends, so it can be very hard to read.</p>
+        
+        <p>Centered text looks best when there are only a few lines of text (2-3 lines).</p>
+        
+        <p>Done well, centered alignment can look classy and elegant. Be sure that your text area is wide enough to break the text into logical lines and that there is enough contrast between the line length to make the text inviting.</p>
+                <figure>
+                    <img src="img/08_alignment.jpg"/>
+                </figure>
+        <!-- image -->
+
+        <h4>Some Typography Tips</h4>
+        
+        <p>Here are some tips and ideas for working with type:</p>
+        <h5>Information Hierarchy</h5>
+        
+        <p>When planning your design, it’s important to work out how you’re going to identify hierarchy and structure. How big or how bold should the title/headline be? What about sub-headings, body copy or figure captions?</p>
+
+        <p>Also consider that using different typefaces can help you create distinctions between different text levels. Many successful publications combine different typefaces to create both classical and contemporary layouts.</p>
+
+        <p>Creating a logical hierarchy in your designs make them easier to scan and read.</p>
+        
+        <h5>Select Typefaces That Support the Theme</h5>
+        
+        <p>Thinking about the theme of your design while you choose your typefaces will help you make decisions. After the often lengthy — but very enjoyable — job of short-listing typefaces, justify your choices by assessing them against your theme.</p>
+        
+        <h5>Get Familiar</h5>
+        
+        <p>The more you do something, the better you get at it. This being the case, you should try to experiment with typography as much as possible. Immerse yourself in the subject. (I have included a short list of books and sites to check out at the end of this guide.)</p>
+
+        <p>Look at the portfolios of designers you admire, and study how they use typography to create great work. Take note of typefaces that appeal to you and how you might use them in your own work.</p>
+
+        <p>Get familiar with the art and science of typography; there is nothing that instills confidence in your decisions like knowledge. Being able to talk through your decisions confidently and clearly with the full support of your craft behind you is very important.</p>
+        
+        <h5>Use Your Own Judgement</h5>
+        <p>While some of the rules I’ve discussed earlier seem rigid, at the end of the day, you should use your better judgment. Setting type is an art form as much as a science.</p>
+
+        <p>While we have talked about some of the rules about typography, it’s important to realize that each job is different. A double spread, a web page, a business card, a letterhead — each have their own objectives and considerations.</p>
+
+        <p>While the rules we’ve covered can be a good starting point, outside influences such as the surrounding design, identity guidelines of the company and client approval can alter how you need to set the type.</p>
+
+        <p>Above all, what really matters is that the design works.</p>
+        
+        <h2>Typography Is Everywhere</h2>
+        
+        <p>Type is a component of design that’s ever-present in the world around us. Road signs, magazine covers, posters, TV ads, film intro sequences — you don’t have to look far to find typography.</p>
+
+        <p>When you look at type, think about what you’re looking at and why it’s the way it is. Soon, you will notice the minor nuances of setting type that often make a big difference between good and bad typography.</p>
+        
+        <h4>Resources on Typography</h4>
+        
+        <p>Lots of books and websites cover the subject of typography. They are fantastic references to have with you while you work with type. Here are a handful of my favorites.</p>
+        
+        <h6>Books</h6>
+        
+        <ul>
+            <li><a href="http://www.amazon.co.uk/Stop-Stealing-Sheep-Find-Works/dp/0201703394/ref=sr_1_1?ie=UTF8&qid=1289222099&sr=8-1" target="_blank">Stop Stealing Sheep and Find Out How Type Works</a> by Erik Spiekermann and E.M. Ginger. Spiekermann tells us how it’s done in this great introduction to the subject.</li>
+        
+            <li><a href="http://www.amazon.co.uk/Elements-Typographic-Style-Robert-Bringhurst/dp/0881792063/ref=sr_1_1?ie=UTF8&qid=1308586178&sr=8-1" target="_blank">The Elements of Typographic Style</a> by Robert Bringhurst. This book is always on my desk and has helped me out more times than I’d like to mention! It’s the big daddy of typography books. I smile every time I look at this book. If you like typography, then you probably already own a copy.</li>
+        
+            <li><a href="http://www.amazon.co.uk/New-Typography-Weimar-Now-Criticism/dp/0520250125/ref=sr_1_1?s=books&ie=UTF8&qid=1289225170&sr=1-1" target="_blank">The New Typography</a> by Jan Tschichold. First published in 1928, the lessons and information in this book are still relevant today. It discusses typography concepts as well as a reflection on typography’s place in society and how we should approach type.</li>
+            
+            <li><a href="http://www.amazon.co.uk/Modern-Typography-Essay-Critical-History/dp/0907259189/ref=sr_1_1?ie=UTF8&qid=1289225086&sr=8-1" target="_blank">Modern Typography: An Essay in Critical History</a> by Robin Kinross. This book is heavy, but it’s worth a read. It’s an amazing record of the history of type from someone who clearly knows their beans!</li>
+        
+        </ul>
+        
+        <h6>Websites</h6>
+        
+        <ul>
+            <li><a href="http://www.fontshop.com/education/" target="_blank">FontShop Education</a>: FontShop Education docs are formatted for easy downloading and printing. Perfect for the classroom or studio.</li>
+            
+            <li><a href="http://www.typophile.com/" target="_blank">Typophile</a>: Great place to identify a typeface. Look through the forums; there are many generous people there that share their own knowledge of the subject. I like looking through this site while eating a sandwich at work.</li>
+            
+            <li><a href="http://typographica.org/" target="_blank">Typographica</a>: Typographica is a review of typefaces and type books, with occasional commentary on fonts and typographic design.</li>
+        </ul>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
         <script src="js/plugins.min.js"></script>
         <script src="js/main.min.js"></script>
+         
+               <!-- <footer role="complementary">
+                    <small>Article by Christian Bailey on Jun 22 2011</small>
+                </footer> -->
+            </article>  
+        </main>  
         
+        <footer role="contentinfo">
+        <p><a href="http://www.christianbailey.com/" target="_blank">Christian Bailey</a> is a graphic designer from North Yorkshire in the UK. For over 10 years, he has practiced design across varied media including print and the web.</p>
+            <small>Article by Christian Bailey on Jun 22 2011</small>
+        </footer>
     </body>
     
 </html>
